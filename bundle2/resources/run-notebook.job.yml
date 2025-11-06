@@ -1,0 +1,10 @@
+resources:
+  jobs:
+    run_notebook:
+      name: run-notebook
+      queue:
+        enabled: true
+      tasks:
+        - task_key: my-notebook-task2
+          notebook_task:
+            notebook_path: ../test.ipynb

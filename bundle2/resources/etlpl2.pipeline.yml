@@ -1,0 +1,11 @@
+resources:
+  pipelines:
+    etlpl2:
+      name: etlpl2
+      libraries:
+        - glob:
+            include: ../src/etlpl2/transformations/**
+      serverless: true
+      catalog: databricks_dlt
+      schema: ${workspace.current_user.short_name}
+      root_path: ../src/etlpl2

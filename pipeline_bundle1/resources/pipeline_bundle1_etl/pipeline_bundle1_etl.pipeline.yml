@@ -1,0 +1,14 @@
+# The main pipeline for pipeline_bundle1
+
+resources:
+  pipelines:
+    pipeline_bundle1_etl:
+      name: pipeline_bundle1_etl
+      catalog: ${var.catalog}
+      schema: ${var.schema}
+      serverless: true
+      root_path: "."
+
+      libraries:
+        - glob:
+            include: transformations/**

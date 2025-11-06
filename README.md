@@ -1,2 +1,1 @@
-# dab_project1
-# ETLTest
+# project ETL related code
